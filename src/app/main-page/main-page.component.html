@@ -1,0 +1,58 @@
+<div class="p-2">
+  <div class="container-fluid text-light">
+    <h3>{{ title1 }}</h3>
+
+    <div
+      class="row row-cols-1 flex-lg-nowrap overflow-scroll row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 no-gutters text-center budka-saga"
+    >
+      <app-film-card *ngFor="let harry of harryPotter" [film]="harry">
+      </app-film-card>
+    </div>
+    <div class="d-none d-lg-flex justify-content-between pb-3">
+      <button class="budka-button" (click)="scrollRight(0)">
+        <i class="bi bi-caret-left-fill"></i>
+      </button>
+      <button class="budka-button" (click)="scrollLeft(0)">
+        <i class="bi bi-caret-right-fill"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid text-light">
+    <h3>{{ title2 }}</h3>
+
+    <div
+      class="row row-cols-1 flex-lg-nowrap overflow-scroll row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 no-gutters text-center budka-saga"
+    >
+      <app-film-card *ngFor="let fast of fastAndFurious" [film]="fast">
+      </app-film-card>
+    </div>
+    <div class="d-none d-lg-flex justify-content-between pb-3">
+      <button class="budka-button" (click)="scrollRight(1)">
+        <i class="bi bi-caret-left-fill"></i>
+      </button>
+      <button class="budka-button" (click)="scrollLeft(1)">
+        <i class="bi bi-caret-right-fill"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid text-light">
+    <h3>{{ title3 }}</h3>
+
+    <div
+      class="row row-cols-1 flex-lg-nowrap overflow-scroll row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 no-gutters text-center budka-saga"
+    >
+      <app-film-card *ngFor="let star of starWars" [film]="star">
+      </app-film-card>
+    </div>
+    <div class="d-none d-lg-flex justify-content-between pb-3">
+      <button class="budka-button" (click)="scrollRight(2)">
+        <i class="bi bi-caret-left-fill"></i>
+      </button>
+      <button class="budka-button" (click)="scrollLeft(2)">
+        <i class="bi bi-caret-right-fill"></i>
+      </button>
+    </div>
+  </div>
+</div>
